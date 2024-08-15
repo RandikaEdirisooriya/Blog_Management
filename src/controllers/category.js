@@ -1,5 +1,5 @@
 const submitBtn = $('#addCategoryBtn');
-
+const cancelBtn = $('#cancelBtn');
 
 function saveCategory(){
     let categoryName = $('#categoryName').val();
@@ -15,6 +15,7 @@ function saveCategory(){
         }),
         success:function(result){
             console.log(result);
+            clear();
         },
         error:function(result){
             console.log(result);
@@ -23,7 +24,16 @@ function saveCategory(){
     })
 }
 
+function clear(){
+     $('#categoryName').val('');
+     $('#categoryDesc').val('');
+}
+
 submitBtn.on('click',function(event) {
     event.preventDefault();
     saveCategory();
+});
+
+cancelBtn.on('click',function(event){
+    clear();
 })
