@@ -287,15 +287,15 @@
                             <br>
                             <form class="forms-sample" >
                                 <div class="form-group">
-                                    <label for="exampleInputName1">Category</label>
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Category">
+                                    <label for="categoryName">Category</label>
+                                    <input type="text" class="form-control" id="categoryName" placeholder="Category">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputCity1">Category Description</label>
-                                    <input type="text" class="form-control" id="exampleInputCity1" placeholder="Description">
+                                    <label for="categoryDesc">Category Description</label>
+                                    <input type="text" class="form-control" id="categoryDesc" placeholder="Description">
                                 </div>
-                                <button type="button" class="btn btn-primary me-2" onclick="showSuccessMessage(event)">Submit</button>
-                                <button type="button" class="btn btn-light">Cancel</button>
+                                <button type="button" class="btn btn-primary me-2" onclick="showSuccessMessage(event)" id="addCategoryBtn">Submit</button>
+                                <button type="button" class="btn btn-light" id="cancelBtn">Cancel</button>
                             </form>
                         </div>
                     </div>
@@ -318,6 +318,10 @@
     </div>
     <!-- page-body-wrapper ends -->
 </div>
+<!--Jquery-->
+<script src="../../lib/jquery-3.7.1.min.js"></script>
+<!--Customer JS-->
+<script src="../../controllers/category.js"></script>
 <!-- container-scroller -->
 <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
 <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
